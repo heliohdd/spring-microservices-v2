@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: currency-exchange
+  jpa:
+    show-sql: true
+  datasource:
+    url: jdbc:h2:mem:testdb
+  h2:
+    console:
+      enabled: true
+      
+resilience4j:
+  retry:
+    instances:
+          
+    
+server:
+  port: 8000
+
+     
+#spring.jpa.show-sql=true
+#spring.datasource.url=jdbc:h2:mem:testdb
+#spring.h2.console.enabled=true
+#
+#eureka.client.serviceUrl.defaultZone=http://localhost:8761/eureka
+#
+#resilience4j.retry.instances.sample-api.maxAttempts=5
+#resilience4j.retry.instances.sample-api.wait-duration=5s
+#resilience4j.retry.instances.sample-api.enable-exponential-backoff=true
+#
+#resilience4j.ratelimiter.instances.default.limitForPeriod=2
+#resilience4j.ratelimiter.instances.default.limitRefreshPeriod=10s
+##resilience4j.bulkhead.instances.default.maxConcurrentCalls=10
+##resilience4j.bulkhead.instances.sample-api.maxConcurrentCalls=10
+#
+#spring.cloud.config.enabled=false 
+##spring.cloud.config.import-check.enabled=false.
+##spring.config.import=configserver
+##spring.config.import=optional:spring-cloud-config-server
